@@ -9,10 +9,10 @@ pnpm-debug.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Env files
-.env
-.env.*
-.env.local
+# Lock files
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 
 # macOS
 .DS_Store
@@ -29,14 +29,6 @@ lerna-debug.log*
 # TypeScript
 *.tsbuildinfo
 
-# Next.js
-.next/
-out/
-.vercel/
-.env.development.local
-.env.test.local
-.env.production.local
-
 # Python
 **/__pycache__/
 *.py[cod]
@@ -44,10 +36,6 @@ out/
 .pytest_cache/
 coverage.xml
 htmlcov/
-
-# Virtual envs
-venv/
-.venv/
 
 # IDEs
 .vscode/
@@ -65,5 +53,3 @@ $RECYCLE.BIN/
 *.swp
 *~
 log/
-
-/generator-auth-service/yarn.lock

@@ -19,7 +19,7 @@ console.log('DB_USER:', DB_USER);
 
 // ถ้ามี DATABASE_URL ใน env ให้ใช้เลย ไม่งั้นสร้างใหม่
 export const DATABASE_URL = process.env.DATABASE_URL || `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`;
-export const PORT = Number(process.env.AUTH_SERVICE_PORT) || 3000;
+export const PORT = Number(process.env.PORT) || 3000;
 
 export const JWT_SECRET = process.env.JWT_SECRET_KEY!;
 export const ACCESS_TOKEN_EXPIRE_MINUTES = Number(process.env.TOKEN_EXPIRATION_MINUTES) || 1440;
